@@ -10,7 +10,7 @@ func main() {
 	fmt.Println(now.Format(time.UnixDate))
 
 	currentMonth := now.Local().Month()
-	currentDay := now.Day()
+	currentDay := now.Local().Day()
 
 	if currentMonth.String() == "February" && currentDay == 29 {
 		fmt.Println("Happy Leap Day!")
